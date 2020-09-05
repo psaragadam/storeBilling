@@ -35,7 +35,7 @@ public class CustomerController {
 	     // repo.cust.set(id, customer);
 	      //repo.cust.put(id, customer);
 	@PutMapping("/cust/{cust_Fname}")
-	   public List<Customer> updateinfo(@PathVariable("cust_Fname") String cust_Fname,@RequestBody Customer customer) {
+	   public List<Customer> updateinfo(@PathVariable("cust_Fname") String cust_Fname) {
 		   
 	      return  service.up(cust_Fname);
 	     
