@@ -45,7 +45,7 @@ public class Customer {
 	}
 	public Customer() {
 		super();
-		// TODO Auto-generated constructor stub
+		
 	}
 	public Customer(int cust_ID, String cust_Fname, String cust_Lname, String address, String emailID,
 			String contact_Number) {
