@@ -30,7 +30,7 @@ public class CustomerService {
 			return null;
 		}
 	}
-//   my application
+
 	public List<Customer> createmore(Customer ad) {
 		repos.table();
 		repos.cust.add(ad);
