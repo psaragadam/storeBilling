@@ -15,8 +15,11 @@ import com.store.storeBilling.productservice.ProductService;
 
 @RestController
 public class ProductController {
+	
 	@Autowired
+	
 	ProductRepo prodtrepo;
+	
 	@Autowired
 	ProductService prodtsevice;
 	
@@ -30,9 +33,8 @@ public class ProductController {
 	}
 	
 	@GetMapping("/prod")
-	
-public List<Productmodel> calling(@RequestParam String prodtype) {
-		System.out.println(prodtrepo.create(prodtype));
+	public List<Productmodel> calling(@RequestParam String prodtype) {
+		//System.out.println(prodtrepo.create(prodtype));
 		
 		return prodtrepo.create(prodtype);
 		
