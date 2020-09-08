@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.store.storeBilling.CustomerModel.Customer;
 import com.store.storeBilling.CustomerRepository.CustomerRepository;
 import com.store.storeBilling.CustomerService.CustomerService;
+import com.store.storeBilling.model.Book;
 
 @RestController
 public class CustomerController {
@@ -36,6 +37,12 @@ public class CustomerController {
 
 		return service.createmore(customer);
 
+	}
+	
+//	Search record by cust_ID 
+	@GetMapping("/search/{cust_ID}")
+	public Customer searchByCustId(@PathVariable int cust_ID) {
+		return service.searchByCustId(cust_ID);
 	}
 
 }

@@ -1,7 +1,7 @@
 package com.store.storeBilling.CustomerModel;
 
 public class Customer {
-	private int cust_ID;
+	public int cust_ID;
 	private String cust_Fname;
 	private String cust_Lname;
 	private String address;
