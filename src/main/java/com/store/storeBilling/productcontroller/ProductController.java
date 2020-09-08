@@ -23,6 +23,8 @@ public class ProductController {
 	@Autowired
 	ProductService prodtsevice;
 	
+	//searching for the product by type
+	
 	@GetMapping("/byProdtype/{prodtype}")
 	public List<Productmodel> call(@PathVariable("prodtype")String prodtype) {
 		
