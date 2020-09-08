@@ -8,6 +8,7 @@ public class StoreBillingApplication {
 
 	/**
 	 * main application
+	 * 
 	 * @param args
 	 */
 	public static void main(String[] args) {
