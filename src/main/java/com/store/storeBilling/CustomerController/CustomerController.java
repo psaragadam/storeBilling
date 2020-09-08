@@ -17,25 +17,21 @@ public class CustomerController {
 	@Autowired
 	CustomerRepo repo;
 	@Autowired
+	CustomerService service;
 
-
-     CustomerService service;
-
+	// Reading all the customer records from repository.
 	@GetMapping("/customers")
 	public List<Customer> all() {
 		return repo.table();
 	}
 
+	// Updating the customer record.
 	@PutMapping("/cust/{cust_Fname}")
 	public List<Customer> updateinfo(@PathVariable("cust_Fname") String cust_Fname) {
-		// if(!repo.cust.add(customer));
-		// repo.cust.remove(id);
-		// repo.cust.set(id, customer);
-		// repo.cust.put(id, customer);
 		return service.up(cust_Fname);
-
 	}
 
+	// Creating the records dynamically.
 	@PostMapping("/cust")
 	public List<Customer> create(@RequestBody Customer customer) {
 

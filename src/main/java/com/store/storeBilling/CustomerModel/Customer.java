@@ -1,7 +1,7 @@
 package com.store.storeBilling.CustomerModel;
 
 public class Customer {
-
+	
 	private int cust_ID;
 	private String cust_Fname;
 	private String cust_Lname;
@@ -78,4 +78,5 @@ public class Customer {
 	public void setContact_Number(String contact_Number) {
 		this.contact_Number = contact_Number;
 	}
+
 }
