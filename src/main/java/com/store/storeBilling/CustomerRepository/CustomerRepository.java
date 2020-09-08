@@ -7,7 +7,7 @@ import com.store.storeBilling.CustomerModel.Customer;
 @Component
 public class CustomerRepository {
 	public List<Customer> cust = new ArrayList<Customer>();
-   //This is the table Instead of Database
+   //This is the table Instead of Database //
 	public List<Customer> table() {
 		cust.add((new Customer(100, "Rama", "Chandra", "2-21/10,Leena Mahal,Ramanthapur,HYD", "rama.chandra@gmail.com",
 				"678-778-9087")));
