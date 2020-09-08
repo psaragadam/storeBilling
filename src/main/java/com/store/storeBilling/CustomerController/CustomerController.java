@@ -14,7 +14,7 @@ import com.store.storeBilling.CustomerService.CustomerService;
 
 @RestController
 public class CustomerController {
-	//test
+	//master test
 	@Autowired
 	CustomerRepo repo;
 	@Autowired
