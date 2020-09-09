@@ -20,9 +20,9 @@ public class BooksController {
 	
 	private BooksRepo booksrepo;
 	
-	@GetMapping(path= "/AddBooks")
-	public void AddBooksList() {
-		
+	@GetMapping(path= "/addBooks")
+	public void AddBooksList() {			
+		// testing into SB-13
 		List<Books> bookList = booksrepo.creatRepository();
 	}
 	
